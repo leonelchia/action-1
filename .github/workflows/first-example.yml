@@ -1,0 +1,17 @@
+name: My Practice Workflow
+
+on: push 
+
+jobs: 
+    first_job:
+      runs-on: ubuntu-latest
+      steps:
+       - name: welcome mesage 
+         run: echo "Github in Action Job"
+
+       - name: List files
+         run: ls
+         
+       - name: Read file
+         run: cat README.md
+          
